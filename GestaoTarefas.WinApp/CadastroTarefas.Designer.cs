@@ -68,6 +68,7 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(352, 23);
             this.txtTitulo.TabIndex = 3;
+            this.txtTitulo.TextChanged += new System.EventHandler(this.txtTitulo_TextChanged);
             // 
             // btnGravar
             // 

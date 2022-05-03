@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GestaoTarefas.Dominio
+﻿namespace GestaoTarefas.WinApp
 {
     public class Contato
     {
+        public Contato()
+        {
+        }
+
         public Contato(int n, string nome, string email, string telefone, string empresa, string cargo)
         {
             Numero = n;
@@ -24,5 +22,11 @@ namespace GestaoTarefas.Dominio
         public string Telefone { get; set; }
         public string Empresa { get; set; }
         public string Cargo { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome}, Email: {Email}, Telefone: {Telefone}, Empresa: {Empresa}";
+        }
+
     }
 }

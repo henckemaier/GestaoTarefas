@@ -152,5 +152,17 @@ namespace GestaoTarefas.WinApp
                 CarregarTarefas();
             }
         }
+
+        private void btnVoltar_Click(object sender, System.EventArgs e)
+        {
+            this.Hide();
+            var MenuPrincipal = new MenuPrincipal();
+            MenuPrincipal.Show();
+        }
+
+        private void ListagemTarefas_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

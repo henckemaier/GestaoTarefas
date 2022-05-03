@@ -48,5 +48,10 @@ namespace GestaoTarefas.WinApp
         {
             Close();
         }
+
+        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
