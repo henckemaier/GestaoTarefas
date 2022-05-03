@@ -14,6 +14,5 @@ namespace GestaoTarefas.Dominio
         List<Tarefa> SelecionarTarefasConcluidas();
 
         List<Tarefa> SelecionarTarefasPendentes();
-
     }
 }

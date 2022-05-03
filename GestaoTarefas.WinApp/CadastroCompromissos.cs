@@ -46,12 +46,19 @@ namespace GestaoTarefas.WinApp
         {
             Valido();
 
-
+            if(Valido() == false)
+            {
+                DialogResult = DialogResult.Cancel;
+                return;
+            }
+            else
+            {
             compromisso.Assunto = txtAssunto.Text;
             compromisso.Local = txtLocal.Text;
             compromisso.Data = txtData.Text;
             compromisso.HoraInicio = txtHoraInicio.Text;
-            compromisso.HoraTermino = txtHoraTermino.Text;
+                compromisso.HoraTermino = txtHoraTermino.Text;
+            }
         }
 
         private void CadastroCompromissos_Load(object sender, EventArgs e)
@@ -64,19 +71,22 @@ namespace GestaoTarefas.WinApp
             if (txtAssunto.Text == "")
             {
                 MessageBox.Show("Por favor, insira o assunto");
-                txtAssunto.Text = "########";
+                return false;
             }
             else if (txtData.Text == "")
             {
                 MessageBox.Show("Por favor, insira uma data");
-                txtData.Text = "########";
+                return false;
             }
             else if (txtLocal.Text == "")
             {
                 MessageBox.Show("Por favor, insira um local");
-                txtLocal.Text = "########";
+                return false;
             }
+            else
+            {
             return true;
+            }
         }
     }
 }

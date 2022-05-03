@@ -52,32 +52,42 @@ namespace GestaoTarefas.WinApp
         {
             Valido();
 
-
-            contato.Nome = txtNome.Text;
-            contato.Email = txtEmail.Text;
-            contato.Empresa = txtEmpresa.Text;
-            contato.Cargo = txtCargo.Text;
-            contato.Telefone = txtTelefone.Text;
+            if (Valido() == false)
+            {
+                DialogResult = DialogResult.Cancel;
+                return;
+            }
+            else
+            {
+                contato.Nome = txtNome.Text;
+                contato.Email = txtEmail.Text;
+                contato.Empresa = txtEmpresa.Text;
+                contato.Cargo = txtCargo.Text;
+                contato.Telefone = txtTelefone.Text;
+            }
         }
 
         private bool Valido()
         {
-            if(txtNome.Text == "")
+            if (txtNome.Text == "")
             {
-                MessageBox.Show("Por favor, insira o nome");
-                txtNome.Text = "########";
+                MessageBox.Show("Por favor, insira o Nome");
+                return false;
             }
-            else if (txtEmail.Text =="")
+            else if (txtEmail.Text == "")
             {
-                MessageBox.Show("Por favor, insira o Email");
-                txtEmail.Text = "########";
+                MessageBox.Show("Por favor, insira uma Email");
+                return false;
             }
             else if (txtTelefone.Text == "")
             {
-                MessageBox.Show("Por favor, insira um telefone");
-                txtTelefone.Text = "########";
+                MessageBox.Show("Por favor, insira um Telefone");
+                return false;
             }
-            return true;
+            else
+            {
+                return true;
+            }
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

@@ -1,5 +1,8 @@
-﻿namespace GestaoTarefas.WinApp
+﻿using System;
+
+namespace GestaoTarefas.WinApp
 {
+    [Serializable]
     public class Contato
     {
         public Contato()
@@ -25,7 +28,7 @@
 
         public override string ToString()
         {
-            return $"Nome: {Nome}, Email: {Email}, Telefone: {Telefone}, Empresa: {Empresa}";
+            return $"Cargo: {Cargo},Nome: {Nome}, Email: {Email}, Telefone: {Telefone}, Empresa: {Empresa}";
         }
 
     }
