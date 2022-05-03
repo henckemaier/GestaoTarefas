@@ -28,10 +28,6 @@ namespace GestaoTarefas.WinApp
 
             foreach (var contatoAgrupado in contatosAgrupados)
             {
-
-                //listContatos.Items.Add("=========================");
-                //listContatos.Items.Add("Cargo: " + contatoAgrupado.Key);
-                //listContatos.Items.Add("--------------------------");
                 foreach (Contato contatoCargo in contatos)
                         if(contatoCargo.Cargo == contatoAgrupado.Key)
                         listContatos.Items.Add(contatoCargo);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestaoTarefas.WinApp
 {
+    [Serializable]
     public class Compromisso
     {
         public Compromisso()

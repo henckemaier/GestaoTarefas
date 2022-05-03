@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -57,7 +58,7 @@ namespace GestaoTarefas.WinApp
             compromisso.Local = txtLocal.Text;
             compromisso.Data = txtData.Text;
             compromisso.HoraInicio = txtHoraInicio.Text;
-                compromisso.HoraTermino = txtHoraTermino.Text;
+            compromisso.HoraTermino = txtHoraTermino.Text;
             }
         }
 
@@ -68,24 +69,38 @@ namespace GestaoTarefas.WinApp
 
         private bool Valido()
         {
+            Regex Data = new Regex(@"\d{2}/\d{2}/\d{4}");
+
+            Regex Hora = new Regex(@"\d{2}:\d{2}:\d{2}");
+
             if (txtAssunto.Text == "")
             {
-                MessageBox.Show("Por favor, insira o assunto");
+                MessageBox.Show("Por favor, insira o assunto!");
                 return false;
             }
-            else if (txtData.Text == "")
+            if (txtLocal.Text == "")
             {
-                MessageBox.Show("Por favor, insira uma data");
+                MessageBox.Show("Por favor, insira um local!");
                 return false;
             }
-            else if (txtLocal.Text == "")
+            if (Data.IsMatch(txtData.Text) == false)
             {
-                MessageBox.Show("Por favor, insira um local");
+                MessageBox.Show("Por favor, insira uma data válida!");
+                return false;
+            }           
+            if (Hora.IsMatch(txtHoraInicio.Text) == false)
+            {
+                MessageBox.Show("Por favor, insira uma hora inicial válida!");
+                return false;
+            }
+            if (Hora.IsMatch(txtHoraTermino.Text) == false)
+            {
+                MessageBox.Show("Por favor, insira uma hora final válida!");
                 return false;
             }
             else
             {
-            return true;
+                return true;
             }
         }
     }

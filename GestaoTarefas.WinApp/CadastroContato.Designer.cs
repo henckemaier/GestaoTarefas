@@ -98,9 +98,10 @@
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(69, 156);
-            this.txtTelefone.MaxLength = 9;
+            this.txtTelefone.MaxLength = 30;
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(271, 23);
+            this.txtTelefone.PlaceholderText = "(99)99999-9999";
+            this.txtTelefone.Size = new System.Drawing.Size(95, 23);
             this.txtTelefone.TabIndex = 6;
             this.txtTelefone.TextChanged += new System.EventHandler(this.txtTelefone_TextChanged);
             // 

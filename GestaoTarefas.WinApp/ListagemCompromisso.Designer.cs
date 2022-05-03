@@ -67,7 +67,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 415);
+            this.btnVoltar.Location = new System.Drawing.Point(12, 382);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(70, 23);
             this.btnVoltar.TabIndex = 9;
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(721, 420);
             this.Controls.Add(this.listCompromissos);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnExcluir);

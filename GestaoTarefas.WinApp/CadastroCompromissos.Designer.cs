@@ -88,7 +88,9 @@
             // txtHoraInicio
             // 
             this.txtHoraInicio.Location = new System.Drawing.Point(82, 134);
+            this.txtHoraInicio.MaxLength = 8;
             this.txtHoraInicio.Name = "txtHoraInicio";
+            this.txtHoraInicio.PlaceholderText = "00:00:00";
             this.txtHoraInicio.Size = new System.Drawing.Size(134, 23);
             this.txtHoraInicio.TabIndex = 6;
             // 
@@ -113,7 +115,9 @@
             // txtHoraTermino
             // 
             this.txtHoraTermino.Location = new System.Drawing.Point(310, 134);
+            this.txtHoraTermino.MaxLength = 8;
             this.txtHoraTermino.Name = "txtHoraTermino";
+            this.txtHoraTermino.PlaceholderText = "00:00:00";
             this.txtHoraTermino.Size = new System.Drawing.Size(134, 23);
             this.txtHoraTermino.TabIndex = 10;
             // 
@@ -142,7 +146,9 @@
             // txtData
             // 
             this.txtData.Location = new System.Drawing.Point(82, 166);
+            this.txtData.MaxLength = 10;
             this.txtData.Name = "txtData";
+            this.txtData.PlaceholderText = "dd/mm/aaaa";
             this.txtData.Size = new System.Drawing.Size(170, 23);
             this.txtData.TabIndex = 16;
             // 
