@@ -90,6 +90,22 @@ namespace GestaoTarefas.WinApp
             }
         }
 
+        private bool TelefoneEstaValido()
+        {
+            bool telefoneEstaValido = false;
+
+            // utilizando o método Replace() para remover caracteres especiais da string
+            string telefoneProcessado = contato.Telefone.Replace("-", string.Empty)
+                                                .Replace(" ", string.Empty);
+
+            if (telefoneProcessado.Length < 9)
+                return telefoneEstaValido;
+
+            telefoneEstaValido = System.Text.RegularExpressions.Regex.IsMatch(telefoneProcessado, @"^[0-9]*$");
+
+            return telefoneEstaValido;
+        }
+
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
 
@@ -98,6 +114,11 @@ namespace GestaoTarefas.WinApp
         private void txtTelefone_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTelefone_KeyPress(object sender, KeyPressEventArgs KeyPressEvent)
+        {
+            KeyPressEvent.Handled = !char.IsDigit(KeyPressEvent.KeyChar);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
