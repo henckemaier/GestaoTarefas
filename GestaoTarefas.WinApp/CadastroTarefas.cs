@@ -71,6 +71,22 @@ namespace GestaoTarefas.WinApp
             }
             else
             {
+                if (radioButtonBaixo.Checked)
+                {
+                    tarefa.Prioridade = "Baixo";
+                }
+                else if (radioButtonMedio.Checked)
+                {
+                    tarefa.Prioridade = "Médio";
+                }
+                else if (radioButtonAlto.Checked)
+                {
+                    tarefa.Prioridade = "Alto";
+                }
+                else
+                {
+                    tarefa.Prioridade = "Baixo";
+                }
                 return true;
             }
         }
@@ -86,6 +102,11 @@ namespace GestaoTarefas.WinApp
         }
 
         private void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -50,5 +50,10 @@ namespace GestaoTarefas.WinApp
                 listItensTarefa.Items.Add(itemTarefa);
             }
         }
+
+        private void CadastroItensTarefa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,6 +34,10 @@
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.radioButtonBaixo = new System.Windows.Forms.RadioButton();
+            this.radioButtonMedio = new System.Windows.Forms.RadioButton();
+            this.radioButtonAlto = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -92,11 +96,57 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(2, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Prioridade:";
+            // 
+            // radioButtonBaixo
+            // 
+            this.radioButtonBaixo.AutoSize = true;
+            this.radioButtonBaixo.Location = new System.Drawing.Point(71, 81);
+            this.radioButtonBaixo.Name = "radioButtonBaixo";
+            this.radioButtonBaixo.Size = new System.Drawing.Size(54, 19);
+            this.radioButtonBaixo.TabIndex = 10;
+            this.radioButtonBaixo.TabStop = true;
+            this.radioButtonBaixo.Text = "Baixo";
+            this.radioButtonBaixo.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMedio
+            // 
+            this.radioButtonMedio.AutoSize = true;
+            this.radioButtonMedio.Location = new System.Drawing.Point(131, 81);
+            this.radioButtonMedio.Name = "radioButtonMedio";
+            this.radioButtonMedio.Size = new System.Drawing.Size(59, 19);
+            this.radioButtonMedio.TabIndex = 11;
+            this.radioButtonMedio.TabStop = true;
+            this.radioButtonMedio.Text = "Médio";
+            this.radioButtonMedio.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonAlto
+            // 
+            this.radioButtonAlto.AutoSize = true;
+            this.radioButtonAlto.Location = new System.Drawing.Point(196, 81);
+            this.radioButtonAlto.Name = "radioButtonAlto";
+            this.radioButtonAlto.Size = new System.Drawing.Size(47, 19);
+            this.radioButtonAlto.TabIndex = 12;
+            this.radioButtonAlto.TabStop = true;
+            this.radioButtonAlto.Text = "Alto";
+            this.radioButtonAlto.UseVisualStyleBackColor = true;
+            // 
             // CadastroTarefas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 211);
+            this.Controls.Add(this.radioButtonAlto);
+            this.Controls.Add(this.radioButtonMedio);
+            this.Controls.Add(this.radioButtonBaixo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.txtTitulo);
@@ -125,5 +175,9 @@
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radioButtonBaixo;
+        private System.Windows.Forms.RadioButton radioButtonMedio;
+        private System.Windows.Forms.RadioButton radioButtonAlto;
     }
 }
