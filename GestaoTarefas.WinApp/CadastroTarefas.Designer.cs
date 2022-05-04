@@ -43,7 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(11, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 57);
+            this.label2.Location = new System.Drawing.Point(25, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 1;
@@ -61,14 +61,14 @@
             // txtNumero
             // 
             this.txtNumero.Enabled = false;
-            this.txtNumero.Location = new System.Drawing.Point(72, 17);
+            this.txtNumero.Location = new System.Drawing.Point(71, 24);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(61, 23);
             this.txtNumero.TabIndex = 2;
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(72, 53);
+            this.txtTitulo.Location = new System.Drawing.Point(71, 68);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(352, 23);
             this.txtTitulo.TabIndex = 3;
@@ -101,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 83);
+            this.label3.Location = new System.Drawing.Point(2, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 15);
             this.label3.TabIndex = 9;
@@ -110,7 +110,7 @@
             // radioButtonBaixo
             // 
             this.radioButtonBaixo.AutoSize = true;
-            this.radioButtonBaixo.Location = new System.Drawing.Point(71, 81);
+            this.radioButtonBaixo.Location = new System.Drawing.Point(72, 97);
             this.radioButtonBaixo.Name = "radioButtonBaixo";
             this.radioButtonBaixo.Size = new System.Drawing.Size(54, 19);
             this.radioButtonBaixo.TabIndex = 10;
@@ -121,7 +121,7 @@
             // radioButtonMedio
             // 
             this.radioButtonMedio.AutoSize = true;
-            this.radioButtonMedio.Location = new System.Drawing.Point(131, 81);
+            this.radioButtonMedio.Location = new System.Drawing.Point(132, 97);
             this.radioButtonMedio.Name = "radioButtonMedio";
             this.radioButtonMedio.Size = new System.Drawing.Size(59, 19);
             this.radioButtonMedio.TabIndex = 11;
@@ -132,7 +132,7 @@
             // radioButtonAlto
             // 
             this.radioButtonAlto.AutoSize = true;
-            this.radioButtonAlto.Location = new System.Drawing.Point(196, 81);
+            this.radioButtonAlto.Location = new System.Drawing.Point(197, 97);
             this.radioButtonAlto.Name = "radioButtonAlto";
             this.radioButtonAlto.Size = new System.Drawing.Size(47, 19);
             this.radioButtonAlto.TabIndex = 12;

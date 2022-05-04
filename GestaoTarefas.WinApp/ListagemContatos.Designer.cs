@@ -107,6 +107,8 @@ namespace GestaoTarefas.WinApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GestaoTarefas.WinApp.Properties.Resources.wp2631390;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 426);
             this.Controls.Add(this.listContatos);
             this.Controls.Add(this.btnVoltar);

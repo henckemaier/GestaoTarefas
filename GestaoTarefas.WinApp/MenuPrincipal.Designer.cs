@@ -38,6 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Unispace", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(193, 69);
             this.label1.Name = "label1";
@@ -105,7 +106,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GestaoTarefas.WinApp.Properties.Resources.joinha;
+            this.BackgroundImage = global::GestaoTarefas.WinApp.Properties.Resources.wp2631390;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(646, 368);
             this.Controls.Add(this.btnCompromissos);
             this.Controls.Add(this.btnContatos);

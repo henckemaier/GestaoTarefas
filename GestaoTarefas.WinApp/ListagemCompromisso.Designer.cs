@@ -82,7 +82,7 @@
             this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
             this.btnVoltar.Image = global::GestaoTarefas.WinApp.Properties.Resources.arrow_alt_circle_left_solid1;
             this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVoltar.Location = new System.Drawing.Point(623, 12);
+            this.btnVoltar.Location = new System.Drawing.Point(616, 12);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 54);
             this.btnVoltar.TabIndex = 9;
@@ -105,6 +105,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackgroundImage = global::GestaoTarefas.WinApp.Properties.Resources.wp2631390;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(721, 420);
             this.Controls.Add(this.listCompromissos);
             this.Controls.Add(this.btnVoltar);

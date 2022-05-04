@@ -124,7 +124,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(582, 275);
+            this.tabPage1.Size = new System.Drawing.Size(649, 286);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tarefas Pendentes";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -133,9 +133,9 @@
             // 
             this.listTarefasPendentes.FormattingEnabled = true;
             this.listTarefasPendentes.ItemHeight = 15;
-            this.listTarefasPendentes.Location = new System.Drawing.Point(6, 6);
+            this.listTarefasPendentes.Location = new System.Drawing.Point(6, 3);
             this.listTarefasPendentes.Name = "listTarefasPendentes";
-            this.listTarefasPendentes.Size = new System.Drawing.Size(570, 259);
+            this.listTarefasPendentes.Size = new System.Drawing.Size(637, 274);
             this.listTarefasPendentes.TabIndex = 6;
             // 
             // tabPage2
@@ -176,6 +176,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GestaoTarefas.WinApp.Properties.Resources.wp2631390;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(683, 393);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.tabControl1);

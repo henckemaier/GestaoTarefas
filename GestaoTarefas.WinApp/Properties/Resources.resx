@@ -118,23 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="joinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="veiojoinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\veiojoinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-alt-circle-left-solid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-alt-circle-left-solid1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="address-book-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\address-book-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check-square-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check-square-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sticky-note-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sticky-note-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trash-alt-solid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trash-alt-solid1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="address-book-regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\address-book-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pen-alt-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen-alt-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,10 +139,16 @@
   <data name="user-tie-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-tie-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="joinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="smile-regular1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\smile-regular1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sticky-note-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sticky-note-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="check-square-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check-square-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wp2631390" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp2631390.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
