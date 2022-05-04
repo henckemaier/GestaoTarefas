@@ -48,7 +48,7 @@ namespace GestaoTarefas.WinApp
 
         private void btnInserir_Click(object sender, System.EventArgs e)
         {
-            CadastroTarefas tela = new CadastroTarefas();
+            CadastroTarefas tela = new CadastroTarefas(repositorioTarefa);
             tela.Tarefa = new Tarefa();
 
             DialogResult resultado = tela.ShowDialog();
@@ -72,7 +72,7 @@ namespace GestaoTarefas.WinApp
                 return;
             }
 
-            CadastroTarefas tela = new CadastroTarefas();
+            CadastroTarefas tela = new CadastroTarefas(repositorioTarefa);
 
             tela.Tarefa = tarefaSelecionada;
 

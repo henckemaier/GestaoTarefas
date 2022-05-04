@@ -36,7 +36,7 @@ namespace GestaoTarefas.WinApp
 
         private void btnInserir_Click(object sender, System.EventArgs e)
         {
-            CadastroContato tela = new CadastroContato();
+            CadastroContato tela = new CadastroContato(repositorioContato);
             tela.Contato =  new Contato();
 
             DialogResult resultado = tela.ShowDialog();
@@ -58,7 +58,7 @@ namespace GestaoTarefas.WinApp
                 return;
             }
 
-            CadastroContato tela = new CadastroContato();
+            CadastroContato tela = new CadastroContato(repositorioContato);
 
             tela.Contato = contatoSelecionado;
 

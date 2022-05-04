@@ -15,8 +15,11 @@ namespace GestaoTarefas.WinApp
     {
         private Contato contato;
 
-        public CadastroContato()
+        private RepositorioContato repositorioContato;
+
+        public CadastroContato(RepositorioContato repositorioContato)
         {
+            this.repositorioContato = repositorioContato;
             InitializeComponent();
         }
 
@@ -70,19 +73,51 @@ namespace GestaoTarefas.WinApp
 
         private bool Valido()
         {
-            Regex R = new Regex(@"\(\d{2}\)\d{5}-\d{4}");
+            Regex Telefone = new Regex(@"\(\d{2}\)\d{5}-\d{4}");
 
             if (txtNome.Text == "")
             {
                 MessageBox.Show("Por favor, insira o Nome!");
                 return false;
             }
+
+            List<string> nomes = repositorioContato.SelecionarTodos().Select(x => x.Nome).ToList();
+            List<string> emails = repositorioContato.SelecionarTodos().Select(x => x.Email).ToList();
+            List<string> telefones = repositorioContato.SelecionarTodos().Select(x => x.Telefone).ToList();
+
+            foreach (string telefone in telefones)
+            {
+                if (txtTelefone.Text.Equals(telefone, StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show("Por favor, insira um Telefone diferente!");
+                    return false;
+                }
+            }
+
+            foreach (string email in emails)
+            {
+                if (txtEmail.Text.Equals(email, StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show("Por favor, insira um Email diferente!");
+                    return false;
+                }
+            }
+
+            foreach (string nome in nomes)
+            {
+                if (txtNome.Text.Equals(nome, StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show("Por favor, insira um Nome diferente!");
+                    return false;
+                }
+            }
+
             if (txtEmail.Text == "")
             {
                 MessageBox.Show("Por favor, insira uma Email!");
                 return false;
             }
-            if (R.IsMatch(txtTelefone.Text) == false)
+            if (Telefone.IsMatch(txtTelefone.Text) == false)
             {
                 MessageBox.Show("Por favor, insira um Telefone válido! Ex. (99)99999-9999");
                 return false;

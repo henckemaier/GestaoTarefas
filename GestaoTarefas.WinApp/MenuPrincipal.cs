@@ -12,8 +12,10 @@ namespace GestaoTarefas.WinApp
 {
     public partial class MenuPrincipal : Form
     {
+        RepositorioContato repositorioContato;
         public MenuPrincipal()
         {
+            repositorioContato = new RepositorioContato();
             InitializeComponent();
         }
 
@@ -49,6 +51,11 @@ namespace GestaoTarefas.WinApp
             var ListagemCompromisso = new ListagemCompromisso();
             ListagemCompromisso.Closed += (s, args) => this.Close();
             ListagemCompromisso.Show();
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

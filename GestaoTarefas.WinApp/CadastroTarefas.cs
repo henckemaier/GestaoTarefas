@@ -15,8 +15,11 @@ namespace GestaoTarefas.WinApp
     {
         private Tarefa tarefa;
 
-        public CadastroTarefas()
+        private IRepositorioTarefa repositorioTarefa;
+
+        public CadastroTarefas(IRepositorioTarefa repositorioTarefa)
         {
+            this.repositorioTarefa = repositorioTarefa;
             InitializeComponent();
         }
 
@@ -35,8 +38,41 @@ namespace GestaoTarefas.WinApp
         }      
 
         private void btnGravar_Click(object sender, EventArgs e)
-        {            
-            tarefa.Titulo = txtTitulo.Text;
+        {
+            Valido();
+
+            if (Valido() == false)
+            {
+                DialogResult = DialogResult.Cancel;
+                return;
+            }
+            else
+            {
+                tarefa.Titulo = txtTitulo.Text;
+            }
+        }
+
+        private bool Valido()
+        {
+            List<string> titulos = repositorioTarefa.SelecionarTodos().Select(x => x.Titulo).ToList();
+
+            foreach (string titulo in titulos)
+            {
+                if (txtTitulo.Text.Equals(titulo, StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show("Por favor, insira um Titulo diferente!");
+                    return false;
+                }
+            }
+            if(txtTitulo.Text == "")
+            {
+                MessageBox.Show("Por favor, insira uma Titulo!");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private void CadastroTarefas_Load(object sender, EventArgs e)
