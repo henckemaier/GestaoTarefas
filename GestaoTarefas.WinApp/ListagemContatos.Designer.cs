@@ -39,39 +39,51 @@ namespace GestaoTarefas.WinApp
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(171, 12);
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.Window;
+            this.btnExcluir.Image = global::GestaoTarefas.WinApp.Properties.Resources.trash_alt_solid1;
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(214, 12);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 38);
+            this.btnExcluir.Size = new System.Drawing.Size(95, 54);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(90, 12);
+            this.btnEditar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnEditar.Image = global::GestaoTarefas.WinApp.Properties.Resources.pen_alt_solid;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(113, 12);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 38);
+            this.btnEditar.Size = new System.Drawing.Size(95, 54);
             this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnInserir
             // 
+            this.btnInserir.BackColor = System.Drawing.SystemColors.Window;
+            this.btnInserir.Image = global::GestaoTarefas.WinApp.Properties.Resources.check_square_solid;
+            this.btnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInserir.Location = new System.Drawing.Point(12, 12);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(72, 39);
+            this.btnInserir.Size = new System.Drawing.Size(95, 54);
             this.btnInserir.TabIndex = 3;
             this.btnInserir.Text = "Inserir";
-            this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInserir.UseVisualStyleBackColor = false;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // listContatos
             // 
             this.listContatos.FormattingEnabled = true;
             this.listContatos.ItemHeight = 15;
-            this.listContatos.Location = new System.Drawing.Point(12, 56);
+            this.listContatos.Location = new System.Drawing.Point(12, 72);
             this.listContatos.Name = "listContatos";
             this.listContatos.Size = new System.Drawing.Size(699, 319);
             this.listContatos.TabIndex = 6;
@@ -79,12 +91,16 @@ namespace GestaoTarefas.WinApp
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 397);
+            this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnVoltar.Image = global::GestaoTarefas.WinApp.Properties.Resources.arrow_alt_circle_left_solid1;
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVoltar.Location = new System.Drawing.Point(616, 12);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(70, 23);
+            this.btnVoltar.Size = new System.Drawing.Size(95, 54);
             this.btnVoltar.TabIndex = 8;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // ListagemContatos
@@ -98,7 +114,8 @@ namespace GestaoTarefas.WinApp
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnInserir);
             this.Name = "ListagemContatos";
-            this.Text = "ListagemContatos";
+            this.ShowIcon = false;
+            this.Text = "Listagem de Contatos";
             this.Load += new System.EventHandler(this.ListagemContatos_Load);
             this.ResumeLayout(false);
 
